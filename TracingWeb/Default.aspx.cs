@@ -13,6 +13,11 @@ namespace TracingWeb
         {
             Trace.Write("info", "I'm tracing on web!");
             System.Diagnostics.Trace.WriteLine("I'm tracing with System.Diagnostics.Trace!");
+            var ts = new System.Diagnostics.TraceSource("MyTraceSource");
+            ts.TraceEvent(System.Diagnostics.TraceEventType.Information, 123, "My trace event.");
+            ts.TraceEvent(System.Diagnostics.TraceEventType.Error, 123, "My trace error event.");
+            ts.Flush();
+            ts.Close();
         }
     }
 }
