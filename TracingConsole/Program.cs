@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
+using TracingLib;
 
 namespace TracingConsole
 {
@@ -19,11 +20,15 @@ namespace TracingConsole
             Console.WriteLine("I'm main!");
             Debug.WriteLine("I'm debugging!");
 
-            TraceSource ts = new TraceSource("MyTraceSource");
-            ts.TraceEvent(TraceEventType.Information, 123, "My trace event.");
-            ts.TraceEvent(TraceEventType.Error, 123, "My trace error event.");
-            ts.Flush();
-            ts.Close();
+            //Trace with TraceSource
+            //TraceSource ts = new TraceSource("MyTraceSource");
+            //ts.TraceEvent(TraceEventType.Information, 123, "My trace event.");
+            //ts.TraceEvent(TraceEventType.Error, 123, "My trace error event.");
+            //ts.Flush();
+            //ts.Close();
+
+            MyTrace.TraceInfo("MyTrace works!");
+            MyTrace.TraceError("MyTrace(error) works!");
         }
     }
 }
