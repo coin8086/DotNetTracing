@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracingConsole", "TracingConsole\TracingConsole.csproj", "{1926CF23-F527-45C0-90EF-84F436A39254}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TracingWeb", "TracingWeb\TracingWeb.csproj", "{68410C6C-06FB-4C82-9BF0-A22835DDF424}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1926CF23-F527-45C0-90EF-84F436A39254}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1926CF23-F527-45C0-90EF-84F436A39254}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1926CF23-F527-45C0-90EF-84F436A39254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68410C6C-06FB-4C82-9BF0-A22835DDF424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68410C6C-06FB-4C82-9BF0-A22835DDF424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68410C6C-06FB-4C82-9BF0-A22835DDF424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68410C6C-06FB-4C82-9BF0-A22835DDF424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
