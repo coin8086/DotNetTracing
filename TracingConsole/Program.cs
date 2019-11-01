@@ -18,9 +18,10 @@ namespace TracingConsole
 
             //To add listeners for default tracing methods, config "listeners"
             //element under "trace" element in App.config.
-            Trace.WriteLine("I'm tracing!");
+            Trace.WriteLine("Call Trace.WriteLine");
             Console.WriteLine("I'm main!");
-            Debug.WriteLine("I'm debugging!");
+            Trace.TraceInformation("Call Trace.TraceInformation");
+            Trace.TraceError("Call Trace.TraceError");
 
             //Trace with TraceSource in code. "MyTraceSource" is configed in
             //App.config.
