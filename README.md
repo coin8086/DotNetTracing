@@ -1,4 +1,4 @@
-# .NET Tracing Samples
+# .NET Tracing
 
 For an overview about .NET tracing, see https://docs.microsoft.com/en-us/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications
 
