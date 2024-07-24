@@ -4,23 +4,23 @@ namespace TracingLib
 {
     public static class MyTrace
     {
-        private const string sourceName = "MyTraceSource";
+        public const string Source = "MyTraceSource";
 
-        private static TraceSource source = new TraceSource(sourceName);
+        private static TraceSource ts = new TraceSource(Source);
 
-        public static void TraceInfo(string msg)
+        public static void Info(string msg)
         {
-            source.TraceEvent(TraceEventType.Information, 0, msg);
+            ts.TraceEvent(TraceEventType.Information, 0, $"[Info] {msg}");
         }
 
-        public static void TraceError(string msg)
+        public static void Error(string msg)
         {
-            source.TraceEvent(TraceEventType.Error, 1, msg);
+            ts.TraceEvent(TraceEventType.Error, 1, $"[Error] {msg}");
         }
 
         public static void Flush()
         {
-            source.Flush();
+            ts.Flush();
         }
     }
 }
